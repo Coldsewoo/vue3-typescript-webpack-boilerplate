@@ -6,6 +6,11 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  template: `<div>adf</div>`
+  template: `<div>adf</div>`,
+  data() {
+    return {
+      test: 1,
+    }
+  },
 })
 </script>

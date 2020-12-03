@@ -4,7 +4,7 @@
   "description": "new boilerplate - vue3, typescript, webpack5, babel 8.0",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --inline --progress --config build/webpack.dev.config.js --mode development",
+    "dev": "webpack serve --inline --hot --config build/webpack.dev.config.js --mode development",
     "start": "yarn run dev",
     "lint": "eslint --fix --ext .js,.vue src",
     "build": "node build/build.js",

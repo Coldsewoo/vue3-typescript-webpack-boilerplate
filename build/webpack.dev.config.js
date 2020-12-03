@@ -19,8 +19,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   mode: 'development',
   devtool: 'inline-source-map',
+  stats: 'errors-only',
   devServer: {
-    clientLogLevel: 'warning',
+    clientLogLevel: 'error',
     historyApiFallback: {
       rewrites: [
         {
@@ -45,6 +46,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     watchOptions: {
       poll: config.dev.poll,
     },
+    quiet: true,
   },
   plugins: [
     new webpack.DefinePlugin({
