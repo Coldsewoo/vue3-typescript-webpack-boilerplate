@@ -8,7 +8,7 @@
 - vue-loader@^16.1.0
 - babel-loader@^8.0.0-beta.6
 
-- **NOTE**: This template uses personalized [babel-preset-typescript-vue](https://github.com/Coldsewoo/babel-preset-typescript-vue.git) forked from **[HERE](babel-preset-typescript-vue)**
+- **NOTE**: This template uses personalized [babel-preset-typescript-vue](https://github.com/Coldsewoo/babel-preset-typescript-vue.git) forked from **[HERE](https://github.com/pawelgabryelewicz/babel-preset-typescript-vue)**
 
 
 ## Installation
