@@ -105,11 +105,16 @@ module.exports = new Promise((resolve, reject) => {
                       `http://${devWebpackConfig.devServer.host}:${port}`
                     )
                 )
-                console.log(
-                  chalk.blue('◆　') +
-                    chalk.green('Or Here: ') +
-                    chalk.white.underline(`http://dev.v2zenerate/`)
-                )
+
+                if (config.dev.devPathAlias) {
+                  console.log(
+                    chalk.blue('◆　') +
+                      chalk.green('Or Here: ') +
+                      chalk.white.underline(
+                        config.dev.devPathAlias
+                      )
+                  )
+                }
                 console.log('')
                 console.log('')
               }, 500)

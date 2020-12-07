@@ -1,16 +1,59 @@
 <template>
-  <div>Vue app</div>
+  <h1>Number is: {{ dice }}</h1>
+  <div>Number of rolls: {{ rolls.length }}</div>
+  <div>Total: {{ total }}</div>
+  <button @click="roll()">Let's roll the dice</button>
+  <button @click="restart()">Restart</button>
+  <ul>
+    <li v-for="(t, index) in rolls" :key="index">
+      {{ t }}
+    </li>
+  </ul>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { reactive, computed, toRefs, onBeforeMount, ref } from 'vue'
 
-export default defineComponent({
-  template: `<div>adf</div>`,
-  data() {
+interface Game {
+  dice: number
+  rolls: number[]
+  total: number
+}
+
+export default {
+  setup() {
+    const isInitialized = ref(false)
+    const sleep = (time: number) => new Promise((r) => setTimeout(r, time))
+    const game: Game = reactive({
+      dice: 0,
+      rolls: [],
+      total: computed(() => game.rolls.reduce((p, c) => p + c, 0)),
+    })
+
+    onBeforeMount(() => {
+      return new Promise((r) => {
+        setTimeout(() => {
+          isInitialized.value = true
+          r()
+        }, 3000)
+      })
+    })
+
+    const roll = () => {
+      game.dice = Math.floor(Math.random() * Math.floor(5)) + 1
+      game.rolls.unshift(game.dice)
+    }
+
+    const restart = () => {
+      game.dice = 0
+      game.rolls = []
+    }
+
     return {
-      test: 1,
+      ...toRefs(game),
+      roll,
+      restart,
     }
   },
-})
+}
 </script>
