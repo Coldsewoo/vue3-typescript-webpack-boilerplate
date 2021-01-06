@@ -34,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "babel-preset-typescript-vue": "https://github.com/Coldsewoo/babel-preset-typescript-vue.git",
+    "babel-preset-typescript-vue3": "^2.0.7",
     "chalk": "^4.1.0",
     "compression-webpack-plugin": "^6.1.1",
     "copy-webpack-plugin": "^6.3.2",
