@@ -13,7 +13,7 @@ module.exports = {
 
     // Various Dev Server settings
     host: '127.0.0.6', // can be overwritten by process.env.HOST
-    port: 13004, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 13005, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     openPage: '',
@@ -37,7 +37,7 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: false,
     cssSourceMap: false,
-    devPathAlias: 'dev.zenerate.ai',
+    devPathAlias: 'http://dev.propfit/',
   },
 
   build: {
