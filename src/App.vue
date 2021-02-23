@@ -9,10 +9,12 @@
       {{ t }}
     </li>
   </ul>
+  <test-component></test-component>
 </template>
 
 <script lang="ts">
-import { reactive, computed, toRefs, onBeforeMount, ref } from 'vue'
+import { reactive, computed, toRefs, onBeforeMount, ref, Ref } from 'vue'
+import TestComponent from './components/TestComponent.vue'
 
 interface Game {
   dice: number
@@ -21,6 +23,7 @@ interface Game {
 }
 
 export default {
+  components: { TestComponent },
   setup() {
     const isInitialized = ref(false)
     const sleep = (time: number) => new Promise((r) => setTimeout(r, time))
@@ -57,3 +60,5 @@ export default {
   },
 }
 </script>
+
+<style scoped></style>

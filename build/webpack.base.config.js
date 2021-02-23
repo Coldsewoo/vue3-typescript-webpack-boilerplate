@@ -58,12 +58,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader'],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.s[a|c]ss$/,
         use: [
-          'vue-style-loader',
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
