@@ -7,9 +7,7 @@
 - webpack@^5.9.0
 - vue-loader@^16.1.2
 - babel-loader@^8.2.2
-
-- **NOTE**: This template uses personalized [babel-preset-typescript-vue](https://github.com/Coldsewoo/babel-preset-typescript-vue.git) forked from **[HERE](https://github.com/pawelgabryelewicz/babel-preset-typescript-vue)**
-
+- babel-preset-typescript-vue3@2.0.8
 
 ## Installation
 
