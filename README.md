@@ -1,12 +1,12 @@
 # Dependencies
 
-- vue@^3.0.3
-- vue-router@^4.0.0-rc.6
-- vuex@^4.0.0-rc.2
-- @vue/compiler-sfc@^3.0.3
+- vue@^3.0.5
+- vue-router@^4.0.4
+- vuex@^4.0.0
+- @vue/compiler-sfc@^3.0.5
 - webpack@^5.9.0
-- vue-loader@^16.1.0
-- babel-loader@^8.0.0-beta.6
+- vue-loader@^16.1.2
+- babel-loader@^8.2.2
 
 - **NOTE**: This template uses personalized [babel-preset-typescript-vue](https://github.com/Coldsewoo/babel-preset-typescript-vue.git) forked from **[HERE](https://github.com/pawelgabryelewicz/babel-preset-typescript-vue)**
 
